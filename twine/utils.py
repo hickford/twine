@@ -30,7 +30,7 @@ def get_config(path="~/.pypirc"):
     path = os.path.expanduser(path)
 
     if not os.path.isfile(path):
-        return {None: {"repository": DEFAULT_REPOSITORY,
+        return {"pypi": {"repository": DEFAULT_REPOSITORY,
                        "username": None,
                        "password": None
                        }
